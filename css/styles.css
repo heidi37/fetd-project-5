@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+  font-family: 'Courier','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+}
+
+/* FLEX BOX */
+
+.container {
+  width: 100%;
+
+  /* background-color: yellow; */
+  height: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-images {
+  flex-basis: 1;
+  padding: 20px 20px;
+}
+
+/* FORM*/
+
+input[type="text"]{
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightgray;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: rgb(184, 181, 181);
+}
+
+.form {
+  text-align: center;
+  padding-bottom: 20px;
+}
