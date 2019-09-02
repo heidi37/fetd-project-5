@@ -10,14 +10,10 @@ body {
 
 /* FLEX BOX */
 
-/* .container {
-  width: 100%;
-  max-width: 1100px;
-  height: auto;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
+.container {
+  max-width: 960px;
+  margin: auto;
+}
 
 .flex-images {
   flex-basis: 1;
@@ -38,23 +34,30 @@ input[type="text"]{
   color: rgb(184, 181, 181);
 }
 
-.form {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
 .search-text {
   display: none;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
 li {
-  border-radius: 10px;
-  float: left;
-  list-style: none;
+  border-radius: 3px;
   background-color: #000000;
-  margin-right: 5px;
   width: 100px;
   line-height: 30px;
   color: white;
   cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  margin-left: -6px;
+  padding: 5px 10px;
+  font-size:12px;
+}
+
+li:hover {
+  background-color: rgb(104, 116, 116);
 }

@@ -10,12 +10,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-        <script>
-            $(function () {
-                $('.filter').filterizr();
-            });
-        </script>
-
+        
+    <div class="container">
         <div class="nav form">
         <input type="text" name="search" placeholder="Search Gallery By Keyword" size="45" data-search>
 
@@ -27,9 +23,9 @@
                 <li data-filter="cold">Cold</li>
         </ul>
         </div>
-    </div>
+    
 
-    <div class="container filtr-container">
+    
         <div class="filter">
         <div class="flex-images filtr-item" data-category="hot" data-sort="100"><a href="images/01.jpg" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." data-alt="Hay Bales"><img src="images/thumbnails/01.jpg"></a><span class="search-text">I love hay bales. Took this snap on a drive through the countryside past some straw fields.</span></div>
 
@@ -55,8 +51,8 @@
 
         <div class="flex-images filtr-item" data-category="cold" data-sort="111"><a href="images/12.jpg" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." data-alt="Bluebells"><img src="images/thumbnails/12.jpg"></a><span class="search-text">I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</span></div>
         </div> <!--filter div-->
+        </div>
     </div>
- 
     <script src="js/lightbox/lightbox-plus-jquery.js"></script>
     <script type="text/javascript" src="js/filterizR/jquery.filterizr.min.js"></script>
     <script>
@@ -66,7 +62,12 @@
         });
     </script>
     <script>
-    $('.filtr-container').filterizr({});
+            $(function () {
+                $('.filter').filterizr();
+            });
+        </script>
+    <script>
+    $('.filter').filterizr({});
     // filterizr.setOptions({ delay: 50, delayMode: 'progressive' });
 
     </script>
