@@ -65,12 +65,15 @@ li:hover {
   background-color: rgb(104, 116, 116);
 }
 
+/*MEDIA QUERIES*/
 @media (max-width: 535px) {
   .container {
     width: 100%;
     text-align: left;
   }
-  .ul {
-    margin-left: 0;
+}
+@media (min-width: 535px) {
+  ul {
+    margin-left: 0px;
   }
 }
