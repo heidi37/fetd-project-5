@@ -45,6 +45,7 @@ input[type="text"]{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .search-text {
   display: none;
 }
@@ -68,6 +69,11 @@ li {
   display: inline;
   text-decoration: none;
   margin-left: -8px;
+=======
+.form {
+  text-align: center;
+  padding-bottom: 20px;
+>>>>>>> parent of 63d411f... search plugin is working
 =======
 .form {
   text-align: center;
