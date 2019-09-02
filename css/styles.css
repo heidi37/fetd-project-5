@@ -18,6 +18,7 @@ body {
 .filter {
   background-color: purple;
   max-width: 1100px;
+  /* background-color: yellow; */
   height: auto;
   display: inline-flex;
   flex-wrap: wrap;
@@ -43,6 +44,7 @@ input[type="text"]{
   color: rgb(184, 181, 181);
 }
 
+<<<<<<< HEAD
 .search-text {
   display: none;
 }
@@ -66,4 +68,9 @@ li {
   display: inline;
   text-decoration: none;
   margin-left: -8px;
+=======
+.form {
+  text-align: center;
+  padding-bottom: 20px;
+>>>>>>> parent of 63d411f... search plugin is working
 }
