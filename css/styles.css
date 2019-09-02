@@ -10,18 +10,23 @@ body {
 
 /* FLEX BOX */
 
-/* .container {
+.container {
   width: 100%;
+
+}
+
+.filter {
+  background-color: purple;
   max-width: 1100px;
   height: auto;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-} */
+}
 
 .flex-images {
   flex-basis: 1;
-  padding: 20px 20px;
+  padding: 30px 30px;
 }
 
 /* FORM*/
@@ -38,23 +43,27 @@ input[type="text"]{
   color: rgb(184, 181, 181);
 }
 
-.form {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
 .search-text {
   display: none;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav {
+}
+
 li {
-  border-radius: 10px;
-  float: left;
-  list-style: none;
+  border-radius: 3px;
   background-color: #000000;
-  margin-right: 5px;
+  padding: 5px 10px;
   width: 100px;
   line-height: 30px;
   color: white;
   cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  margin-left: -8px;
 }
