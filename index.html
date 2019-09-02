@@ -10,32 +10,65 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="form">
-    <form>
-        <input type="text" placeholder="Search Gallery By Keyword" size="45">
-    </form>
+        <script>
+            $(function () {
+                $('.filter').filterizr();
+            });
+        </script>
+
+        <div class="nav form">
+        <input type="text" name="search" placeholder="Search Gallery By Keyword" size="45" data-search>
+
+        <ul class="nav">
+                <li data-filter="all">All</li>
+                <li data-filter="hot">Hot</li>
+                <li data-filter="warm">Warm</li>
+                <li data-filter="cool">Cool</li>
+                <li data-filter="cold">Cold</li>
+        </ul>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="flex-images"><a href="images/01.jpg" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." data-alt="Hay Bales"><img src="images/thumbnails/01.jpg"></a></div>
-        <div class="flex-images"><a href="images/02.jpg" data-lightbox="gallery" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here." data-alt="Lake"><img src="images/thumbnails/02.jpg"></a></div>
-        <div class="flex-images"><a href="images/03.jpg" data-lightbox="gallery" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below." data-alt="Canyon"><img src="images/thumbnails/03.jpg"></a></div>
-        <div class="flex-images"><a href="images/04.jpg" data-lightbox="gallery" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. " data-alt="Iceberg"><img src="images/thumbnails/04.jpg"></a></div>
-        <div class="flex-images"><a href="images/05.jpg" data-lightbox="gallery" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." data-alt="Desert"><img src="images/thumbnails/05.jpg"></a></div>
-        <div class="flex-images"><a href="images/06.jpg" data-lightbox="gallery" data-title="Fall is coming, I love when the leaves on the trees start to change color." data-alt="Fall"><img src="images/thumbnails/06.jpg"></a></div>
-        <div class="flex-images"><a href="images/07.jpg" data-lightbox="gallery" data-title="I drove past this plantation yesterday, everything is so green!" data-alt="Plantation"><img src="images/thumbnails/07.jpg"></a></div>
-        <div class="flex-images"><a href="images/08.jpg" data-lightbox="gallery" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!" data-alt="Dunes"><img src="images/thumbnails/08.jpg"></a></div>
-        <div class="flex-images"><a href="images/09.jpg" data-lightbox="gallery" data-title="We enjoyed a quiet stroll down this countryside lane. " data-alt="Countryside Lane"><img src="images/thumbnails/09.jpg"></a></div>
-        <div class="flex-images"><a href="images/10.jpg" data-lightbox="gallery" data-title="Sunset at the coast! The sky turned a lovely shade of orange." data-alt="Sunset"><img src="images/thumbnails/10.jpg"></a></div>
-        <div class="flex-images"><a href="images/11.jpg" data-lightbox="gallery" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking." data-alt="Cave"><img src="images/thumbnails/11.jpg"></a></div>
-        <div class="flex-images"><a href="images/12.jpg" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." data-alt="Bluebells"><img src="images/thumbnails/12.jpg"></a></div>
+    <div class="container filtr-container">
+        <div class="filter">
+        <div class="flex-images filtr-item" data-category="hot" data-sort="100"><a href="images/01.jpg" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." data-alt="Hay Bales"><img src="images/thumbnails/01.jpg"></a><span class="search-text">I love hay bales. Took this snap on a drive through the countryside past some straw fields.</span></div>
+
+        <div class="flex-images filtr-item" data-category="cold" data-sort="101"><a href="images/02.jpg" data-lightbox="gallery" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here." data-alt="Lake"><img src="images/thumbnails/02.jpg"></a><span class="search-text">The lake was so calm today. We had a great view of the snow on the mountains from here.</span></div>
+
+        <div class="flex-images filtr-item" data-category="cool" data-sort="102"><a href="images/03.jpg" data-lightbox="gallery" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below." data-alt="Canyon"><img src="images/thumbnails/03.jpg"></a><span class="search-text">I hiked to the top of the mountain and got this picture of the canyon and trees below.</span></div>
+
+        <div class="flex-images filtr-item" data-category="cold" data-sort="103"><a href="images/04.jpg" data-lightbox="gallery" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." data-alt="Iceberg"><img src="images/thumbnails/04.jpg"></a><span class="search-text">It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</span></div>
+
+        <div class="flex-images filtr-item" data-category="hot" data-sort="104"><a href="images/05.jpg" data-lightbox="gallery" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." data-alt="Desert"><img src="images/thumbnails/05.jpg"></a><span class="search-text">The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</span></div>
+
+        <div class="flex-images filtr-item" data-category="cool" data-sort="105"><a href="images/06.jpg" data-lightbox="gallery" data-title="Fall is coming, I love when the leaves on the trees start to change color." data-alt="Fall"><img src="images/thumbnails/06.jpg"></a><span class="search-text">Fall is coming, I love when the leaves on the trees start to change color.</span></div>
+
+        <div class="flex-images filtr-item" data-category="warm" data-sort="106"><a href="images/07.jpg" data-lightbox="gallery" data-title="I drove past this plantation yesterday, everything is so green!" data-alt="Plantation"><img src="images/thumbnails/07.jpg"></a><span class="search-text">I drove past this plantation yesterday, everything is so green!</span></div>
+
+        <div class="flex-images filtr-item" data-category="hot" data-sort="107"><a href="images/08.jpg" data-lightbox="gallery" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!" data-alt="Dunes"><img src="images/thumbnails/08.jpg"></a><span class="search-text">My summer vacation to the Oregon Coast. I love the sandy dunes!</span></div>
+
+        <div class="flex-images filtr-item" data-category="cool" data-sort="108"><a href="images/09.jpg" data-lightbox="gallery" data-title="We enjoyed a quiet stroll down this countryside lane." data-alt="Countryside Lane"><img src="images/thumbnails/09.jpg"></a><span class="search-text">We enjoyed a quiet stroll down this countryside lane.</span></div>
+
+        <div class="flex-images filtr-item" data-category="warm" data-sort="109"><a href="images/10.jpg" data-lightbox="gallery" data-title="Sunset at the coast! The sky turned a lovely shade of orange." data-alt="Sunset"><img src="images/thumbnails/10.jpg"></a><span class="search-text">Sunset at the coast! The sky turned a lovely shade of orange.</span></div>
+
+        <div class="flex-images filtr-item" data-category="warm" data-sort="110"><a href="images/11.jpg" data-lightbox="gallery" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking." data-alt="Cave"><img src="images/thumbnails/11.jpg"></a><span class="search-text">I did a tour of a cave today and the view of the landscape below was breathtaking.</span></div>
+
+        <div class="flex-images filtr-item" data-category="cold" data-sort="111"><a href="images/12.jpg" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." data-alt="Bluebells"><img src="images/thumbnails/12.jpg"></a><span class="search-text">I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</span></div>
+        </div> <!--filter div-->
     </div>
+ 
     <script src="js/lightbox/lightbox-plus-jquery.js"></script>
+    <script type="text/javascript" src="js/filterizR/jquery.filterizr.min.js"></script>
     <script>
         lightbox.option( {
             'wrapAround': true,
             'fadeDuration': 1000,
         });
+    </script>
+    <script>
+    $('.filtr-container').filterizr({});
+    // filterizr.setOptions({ delay: 50, delayMode: 'progressive' });
+
     </script>
 </body>
 </html>
