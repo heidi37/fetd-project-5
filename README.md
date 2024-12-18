@@ -1,10 +1,8 @@
 # Photo Gallery Using jQuery Plugins
 
-This was a very early-stage project in the Team Treehouse [Front-End Web Development Tech Degree](https://teamtreehouse.com/techdegree/front-end-web-development) program.
+This was a very early-stage project in the Team Treehouse [Front-End Web Development Tech Degree](https://teamtreehouse.com/techdegree/front-end-web-development) program. I completed the program in 2019. [View my Certificate](https://www.credential.net/1700e85d-d29e-493d-a28e-a8c1860459c8#acc.PS7ITKNb)
 
 The goal of the project was to utilize jQuery plugins to implement functionality. My project uses the [Lightbox2 plugin](https://github.com/lokesh/lightbox2/) for the gallery display. [FilterizR](https://github.com/giotiskl/filterizr/) was used for the searching and sorting.
-
-I completed the Front-End Web Development Tech Degree in 2019. [View my Certificate](https://www.credential.net/1700e85d-d29e-493d-a28e-a8c1860459c8#acc.PS7ITKNb)
 
 <img src="./images/fetd-5.gif" alt="scrolling gif of one-page portfolio" />
 
