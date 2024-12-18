@@ -2,7 +2,7 @@
 
 This was a very early-stage project in the Team Treehouse [Front-End Web Development Tech Degree](https://teamtreehouse.com/techdegree/front-end-web-development) program.
 
-The goal of the project was to utilize jQuery plugins to implement functionality. My project uses the [Lightbox2 plugin](https://github.com/lokesh/lightbox2/) for the gallery display. [Filterizr](https://github.com/giotiskl/filterizr/) was used for the searching and sorting.
+The goal of the project was to utilize jQuery plugins to implement functionality. My project uses the [Lightbox2 plugin](https://github.com/lokesh/lightbox2/) for the gallery display. [FilterizR](https://github.com/giotiskl/filterizr/) was used for the searching and sorting.
 
 I completed the Front-End Web Development Tech Degree in 2019. [View my Certificate](https://www.credential.net/1700e85d-d29e-493d-a28e-a8c1860459c8#acc.PS7ITKNb)
 
